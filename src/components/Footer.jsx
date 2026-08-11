@@ -40,8 +40,8 @@ export default function Footer({ navigate }) {
         <div>
           <p className="text-white font-semibold mb-4 tracking-wider text-sm uppercase">Contact</p>
           <div className="flex flex-col gap-3 text-sm text-slate-400">
-            <p className="leading-relaxed">244A, Jalan Batu Unjur 7,<br />Taman Bayu Perdana,<br />41200 Klang, Selangor</p>
-            <p>📞 03-3323 8581</p>
+            <p className="leading-relaxed">23-A, Jalan Bayu Tinggi 7,<br />Taman Bayu Tinggi,<br />41200 Pelabuhan Klang,<br />Selangor Darul Ehsan, Malaysia</p>
+            <p>📞 Hunting Lines: +(6) 03 3323 8581</p>
             <p className="text-slate-500">Mon – Fri: 9:00 AM – 6:00 PM</p>
           </div>
         </div>

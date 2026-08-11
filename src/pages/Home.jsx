@@ -127,10 +127,10 @@ export default function Home({ navigate }) {
           <h2 className="text-4xl font-bold text-slate-950 mb-4">Ready to Ship?</h2>
           <p className="text-slate-800 mb-8 text-lg">Get in touch with our team today for a personalised shipping quote.</p>
           <a
-            href="tel:0333238581"
+            href="tel:+60333238581"
             className="inline-block px-10 py-4 bg-slate-950 text-amber-500 font-bold rounded tracking-wide hover:bg-slate-800 transition-colors text-lg"
           >
-            📞 03-3323 8581
+            📞 Hunting Lines: +(6) 03 3323 8581
           </a>
         </div>
       </section>

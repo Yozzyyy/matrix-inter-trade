@@ -30,7 +30,7 @@ export default function AboutUs() {
               From Klang, <br />to Everywhere.
             </h2>
             <p className="text-slate-400 leading-relaxed mb-4">
-              Matrix Inter Trade Sdn Bhd was founded with a simple vision — to provide businesses in Malaysia with a logistics partner they could genuinely count on. Based in Taman Bayu Perdana, Klang, we've grown from a small shipping outfit into a full-service logistics provider.
+              Matrix Inter Trade Sdn Bhd was founded with a simple vision — to provide businesses in Malaysia with a logistics partner they could genuinely count on. Based in Taman Bayu Tinggi, Pelabuhan Klang, we've grown from a small shipping outfit into a full-service logistics provider.
             </p>
             <p className="text-slate-400 leading-relaxed mb-4">
               Our journey has been built on relationships — with our clients, our partners, and our team. Every shipment we handle carries the weight of someone's livelihood, and we take that responsibility seriously.
@@ -88,9 +88,10 @@ export default function AboutUs() {
                 <div>
                   <p className="text-white font-medium mb-1">Address</p>
                   <p className="text-slate-400 text-sm leading-relaxed">
-                    244A, Jalan Batu Unjur 7,<br />
-                    Taman Bayu Perdana,<br />
-                    41200 Klang, Selangor
+                    23-A, Jalan Bayu Tinggi 7,<br />
+                    Taman Bayu Tinggi,<br />
+                    41200 Pelabuhan Klang,<br />
+                    Selangor Darul Ehsan, Malaysia
                   </p>
                 </div>
               </div>
@@ -102,9 +103,9 @@ export default function AboutUs() {
                   </svg>
                 </div>
                 <div>
-                  <p className="text-white font-medium mb-1">Phone</p>
-                  <a href="tel:0333238581" className="text-amber-500 hover:text-amber-400 text-sm">
-                    03-3323 8581
+                  <p className="text-white font-medium mb-1">Hunting Lines</p>
+                  <a href="tel:+60333238581" className="text-amber-500 hover:text-amber-400 text-sm">
+                    +(6) 03 3323 8581
                   </a>
                 </div>
               </div>
@@ -124,38 +125,18 @@ export default function AboutUs() {
             </div>
           </div>
 
-          {/* Map placeholder */}
-          <div className="rounded-2xl bg-slate-900 border border-slate-800 h-80 flex items-center justify-center">
-            <div className="text-center text-slate-600">
-              <svg className="w-10 h-10 mx-auto mb-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1} d="M9 20l-5.447-2.724A1 1 0 013 16.382V5.618a1 1 0 011.447-.894L9 7m0 13l6-3m-6 3V7m6 10l4.553 2.276A1 1 0 0021 18.382V7.618a1 1 0 00-.553-.894L15 4m0 13V4" />
-              </svg>
-              <p className="text-sm">Embed a Google Maps iframe here</p>
-            </div>
-          </div>
-        </div>
-      </section>
-
-      {/* Team placeholder */}
-      <section className="bg-slate-900 border-t border-slate-800 py-20">
-        <div className="max-w-7xl mx-auto px-6 text-center">
-          <p className="text-amber-500 text-xs tracking-widest uppercase mb-3">The People Behind It</p>
-          <h2 className="text-4xl font-bold mb-4">Our Team</h2>
-          <p className="text-slate-400 mb-12 max-w-lg mx-auto">
-            A dedicated team of logistics professionals committed to getting your cargo where it needs to go.
-          </p>
-          <div className="grid grid-cols-2 md:grid-cols-4 gap-6">
-            {[1, 2, 3, 4].map((i) => (
-              <div key={i} className="text-center">
-                <div className="w-24 h-24 rounded-full bg-slate-800 border border-slate-700 mx-auto mb-4 flex items-center justify-center">
-                  <svg className="w-8 h-8 text-slate-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1} d="M16 7a4 4 0 11-8 0 4 4 0 018 0zM12 14a7 7 0 00-7 7h14a7 7 0 00-7-7z" />
-                  </svg>
-                </div>
-                <p className="text-slate-500 text-sm">Team Member {i}</p>
-                <p className="text-slate-600 text-xs">Add name & title</p>
-              </div>
-            ))}
+          {/* Google Map */}
+          <div className="rounded-2xl overflow-hidden border border-slate-800 h-80">
+            <iframe
+              title="Matrix Inter Trade Sdn Bhd location"
+              src="https://www.google.com/maps?q=23-A,+Jalan+Bayu+Tinggi+7,+Taman+Bayu+Tinggi,+41200+Pelabuhan+Klang,+Selangor,+Malaysia&output=embed"
+              width="100%"
+              height="100%"
+              style={{ border: 0 }}
+              allowFullScreen=""
+              loading="lazy"
+              referrerPolicy="no-referrer-when-downgrade"
+            />
           </div>
         </div>
       </section>
