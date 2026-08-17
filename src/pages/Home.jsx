@@ -130,7 +130,7 @@ export default function Home({ navigate }) {
             href="tel:+60333238581"
             className="inline-block px-10 py-4 bg-slate-950 text-amber-500 font-bold rounded tracking-wide hover:bg-slate-800 transition-colors text-lg"
           >
-            📞 Hunting Lines: +(6) 03 3323 8581
+            📞 Call Line: +(6) 03 3323 8581
           </a>
         </div>
       </section>
