@@ -148,9 +148,10 @@ export default function Services({ navigate }) {
       {/* CTA */}
       <section className="max-w-3xl mx-auto px-6 py-24 text-center">
         <h2 className="font-display text-4xl font-bold mb-4 text-ink">Have a Specific Requirement?</h2>
-        <p className="text-ink-soft">
+        <p className="text-ink-soft" style={{marginBottom: '5px'}}>
           We're flexible. If you need something not listed above, give us a call — we'll find a solution.
         </p>
+
         <button
           onClick={() => navigate("about")}
           className="px-8 py-4 bg-signal hover:bg-signal-dark text-paper font-display font-bold rounded-sm tracking-wide transition-all"

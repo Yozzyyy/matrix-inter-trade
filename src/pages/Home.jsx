@@ -114,7 +114,7 @@ export default function Home({ navigate }) {
         </div>
         <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
           {highlights.map((h) => (
-            <div key={h.title} className="relative p-8 bg-paper-raised border border-steel hover:border-signal/50 transition-colors group">
+            <div key={h.title} className="relative p-8 bg-ink border-ink hover:border-signal/50 transition-colors group">
               <CornerTicks />
               <div className="flex items-start justify-between mb-5">
                 {h.icon}
