@@ -147,8 +147,8 @@ export default function Services({ navigate }) {
 
       {/* CTA */}
       <section className="max-w-3xl mx-auto px-6 py-24 text-center">
-        <h2 className="font-display text-4xl font-bold mb-4 text-white">Have a Specific Requirement?</h2>
-        <p className="text-white mb-8">
+        <h2 className="font-display text-4xl font-bold mb-4 text-ink">Have a Specific Requirement?</h2>
+        <p className="text-ink bg-ink-soft mb-8">
           We're flexible. If you need something not listed above, give us a call — we'll find a solution.
         </p>
         <button
