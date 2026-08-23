@@ -25,16 +25,16 @@ export default function AboutUs() {
         <div className="grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
           <div>
             <p className="font-mono text-signal text-xs tracking-widest uppercase mb-4">// Our Story</p>
-            <h2 className="font-display text-4xl font-bold mb-6 leading-snug text-ink">
+            <h2 className="font-display text-4xl font-bold mb-6 leading-snug text-white">
               From Klang, <br />to Everywhere.
             </h2>
-            <p className="text-ink-soft leading-relaxed mb-4">
+            <p className="text-white leading-relaxed mb-4">
               Matrix Inter Trade Sdn Bhd was founded with a simple vision — to provide businesses in Malaysia with a logistics partner they could genuinely count on. Based in Taman Bayu Tinggi, Pelabuhan Klang, we've grown from a small shipping outfit into a full-service logistics provider.
             </p>
-            <p className="text-ink-soft leading-relaxed mb-4">
+            <p className="text-white leading-relaxed mb-4">
               Our journey has been built on relationships — with our clients, our partners, and our team. Every shipment we handle carries the weight of someone's livelihood, and we take that responsibility seriously.
             </p>
-            <p className="text-ink-soft leading-relaxed">
+            <p className="text-white leading-relaxed">
               Today, we serve hundreds of clients across a wide range of industries, offering freight forwarding, land transport, warehousing, and more — all managed from our Klang base.
             </p>
           </div>
@@ -115,9 +115,9 @@ export default function AboutUs() {
                   </svg>
                 </div>
                 <div>
-                  <p className="text-ink font-display font-medium mb-1">Business Hours</p>
-                  <p className="text-ink-soft text-sm">Monday – Friday: 9:00 AM – 6:00 PM</p>
-                  <p className="text-ink-soft/60 text-xs mt-0.5">Closed on weekends & public holidays</p>
+                  <p className="text-white font-display font-medium mb-1">Business Hours</p>
+                  <p className="text-white text-sm">Monday – Friday: 9:00 AM – 6:00 PM</p>
+                  <p className="text-white/60 text-xs mt-0.5">Closed on weekends & public holidays</p>
                 </div>
               </div>
             </div>
