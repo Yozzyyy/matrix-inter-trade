@@ -9,14 +9,13 @@ export default function AboutUs() {
   return (
     <div className="pt-20">
       {/* Header */}
-      <section className="relative bg-slate-900 border-b border-slate-800 py-20 overflow-hidden">
-        <div className="absolute inset-0 bg-[linear-gradient(to_right,#1e293b44_1px,transparent_1px),linear-gradient(to_bottom,#1e293b44_1px,transparent_1px)] bg-[size:48px_48px]" />
-        <div className="absolute right-0 top-0 w-[500px] h-full bg-amber-500/3 skew-x-12 transform translate-x-40" />
+      <section className="relative bg-navy-dark py-24 overflow-hidden">
+        <div className="absolute inset-0 bg-[linear-gradient(to_right,#ffffff08_1px,transparent_1px),linear-gradient(to_bottom,#ffffff08_1px,transparent_1px)] bg-[size:48px_48px]" />
         <div className="relative max-w-7xl mx-auto px-6 text-center">
-          <p className="text-amber-500 text-xs tracking-widest uppercase mb-4">Who We Are</p>
-          <h1 className="text-5xl md:text-6xl font-bold mb-6">About Us</h1>
-          <p className="text-slate-400 text-lg max-w-xl mx-auto">
-            A family-built logistics company rooted in Klang, dedicated to moving goods and building trust across Malaysia.
+          <p className="font-mono text-signal text-xs tracking-widest uppercase mb-4">// Who We Are</p>
+          <h1 className="font-display text-5xl md:text-6xl font-bold mb-6 text-paper">About Us</h1>
+          <p className="text-steel text-lg max-w-xl mx-auto">
+            A family-built logistics company rooted in Pelabuhan Klang, dedicated to moving goods and building trust across Malaysia.
           </p>
         </div>
       </section>
@@ -25,46 +24,45 @@ export default function AboutUs() {
       <section className="max-w-7xl mx-auto px-6 py-20">
         <div className="grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
           <div>
-            <p className="text-amber-500 text-xs tracking-widest uppercase mb-4">Our Story</p>
-            <h2 className="text-4xl font-bold mb-6 leading-snug">
+            <p className="font-mono text-signal text-xs tracking-widest uppercase mb-4">// Our Story</p>
+            <h2 className="font-display text-4xl font-bold mb-6 leading-snug text-ink">
               From Klang, <br />to Everywhere.
             </h2>
-            <p className="text-slate-400 leading-relaxed mb-4">
+            <p className="text-ink-soft leading-relaxed mb-4">
               Matrix Inter Trade Sdn Bhd was founded with a simple vision — to provide businesses in Malaysia with a logistics partner they could genuinely count on. Based in Taman Bayu Tinggi, Pelabuhan Klang, we've grown from a small shipping outfit into a full-service logistics provider.
             </p>
-            <p className="text-slate-400 leading-relaxed mb-4">
+            <p className="text-ink-soft leading-relaxed mb-4">
               Our journey has been built on relationships — with our clients, our partners, and our team. Every shipment we handle carries the weight of someone's livelihood, and we take that responsibility seriously.
             </p>
-            <p className="text-slate-400 leading-relaxed">
+            <p className="text-ink-soft leading-relaxed">
               Today, we serve hundreds of clients across a wide range of industries, offering freight forwarding, land transport, warehousing, and more — all managed from our Klang base.
             </p>
           </div>
 
-          {/* Image placeholder */}
-          <div className="rounded-2xl bg-slate-900 border border-slate-800 h-72 md:h-96 flex items-center justify-center">
-            <div className="text-center text-slate-600">
-              <svg className="w-10 h-10 mx-auto mb-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1} d="M4 16l4.586-4.586a2 2 0 012.828 0L16 16m-2-2l1.586-1.586a2 2 0 012.828 0L20 14m-6-6h.01M6 20h12a2 2 0 002-2V6a2 2 0 00-2-2H6a2 2 0 00-2 2v12a2 2 0 002 2z" />
-              </svg>
-              <p className="text-sm">Add a team or office photo here</p>
-            </div>
+          {/* Real port image */}
+          <div className="relative h-72 md:h-96 border border-steel overflow-hidden">
+            <img
+              src="https://images.unsplash.com/photo-1494412552100-42e4e7a74ec6?auto=format&fit=crop&w=1600&q=80"
+              alt="Aerial view of shipping containers stacked at a port"
+              className="absolute inset-0 w-full h-full object-cover"
+            />
           </div>
         </div>
       </section>
 
       {/* Values */}
-      <section className="bg-slate-900 border-y border-slate-800 py-20">
+      <section className="bg-navy py-20">
         <div className="max-w-7xl mx-auto px-6">
           <div className="text-center mb-14">
-            <p className="text-amber-500 text-xs tracking-widest uppercase mb-3">What Drives Us</p>
-            <h2 className="text-4xl font-bold">Our Core Values</h2>
+            <p className="font-mono text-signal text-xs tracking-widest uppercase mb-3">// What Drives Us</p>
+            <h2 className="font-display text-4xl font-bold text-paper">Our Core Values</h2>
           </div>
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
             {values.map((v, i) => (
-              <div key={v.title} className="p-6 border border-slate-800 rounded-xl bg-slate-950 hover:border-amber-500/30 transition-colors">
-                <div className="text-amber-500 font-bold text-3xl mb-3">0{i + 1}</div>
-                <h3 className="text-white font-semibold text-lg mb-2">{v.title}</h3>
-                <p className="text-slate-400 text-sm leading-relaxed">{v.desc}</p>
+              <div key={v.title} className="p-6 border border-paper/15 bg-navy-dark hover:border-signal/50 transition-colors">
+                <div className="font-mono text-signal font-bold text-2xl mb-3">0{i + 1}</div>
+                <h3 className="font-display text-paper font-semibold text-lg mb-2">{v.title}</h3>
+                <p className="text-steel text-sm leading-relaxed">{v.desc}</p>
               </div>
             ))}
           </div>
@@ -75,19 +73,19 @@ export default function AboutUs() {
       <section className="max-w-7xl mx-auto px-6 py-20">
         <div className="grid grid-cols-1 md:grid-cols-2 gap-12 items-start">
           <div>
-            <p className="text-amber-500 text-xs tracking-widest uppercase mb-4">Company Details</p>
-            <h2 className="text-4xl font-bold mb-8">Find Us</h2>
+            <p className="font-mono text-signal text-xs tracking-widest uppercase mb-4">// Company Details</p>
+            <h2 className="font-display text-4xl font-bold mb-8 text-ink">Find Us</h2>
             <div className="space-y-6">
               <div className="flex gap-4">
-                <div className="w-10 h-10 rounded bg-amber-500/10 flex items-center justify-center shrink-0">
-                  <svg className="w-5 h-5 text-amber-500" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <div className="w-10 h-10 border border-signal/30 bg-paper-raised flex items-center justify-center shrink-0">
+                  <svg className="w-5 h-5 text-signal" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                     <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.5} d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z" />
                     <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.5} d="M15 11a3 3 0 11-6 0 3 3 0 016 0z" />
                   </svg>
                 </div>
                 <div>
-                  <p className="text-white font-medium mb-1">Address</p>
-                  <p className="text-slate-400 text-sm leading-relaxed">
+                  <p className="text-ink font-display font-medium mb-1">Address</p>
+                  <p className="text-ink-soft text-sm leading-relaxed">
                     23-A, Jalan Bayu Tinggi 7,<br />
                     Taman Bayu Tinggi,<br />
                     41200 Pelabuhan Klang,<br />
@@ -97,36 +95,36 @@ export default function AboutUs() {
               </div>
 
               <div className="flex gap-4">
-                <div className="w-10 h-10 rounded bg-amber-500/10 flex items-center justify-center shrink-0">
-                  <svg className="w-5 h-5 text-amber-500" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <div className="w-10 h-10 border border-signal/30 bg-paper-raised flex items-center justify-center shrink-0">
+                  <svg className="w-5 h-5 text-signal" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                     <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.5} d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z" />
                   </svg>
                 </div>
                 <div>
-                  <p className="text-white font-medium mb-1">Hunting Lines</p>
-                  <a href="tel:+60333238581" className="text-amber-500 hover:text-amber-400 text-sm">
+                  <p className="text-ink font-display font-medium mb-1">Hunting Lines</p>
+                  <a href="tel:+60333238581" className="text-signal hover:text-signal-dark text-sm">
                     +(6) 03 3323 8581
                   </a>
                 </div>
               </div>
 
               <div className="flex gap-4">
-                <div className="w-10 h-10 rounded bg-amber-500/10 flex items-center justify-center shrink-0">
-                  <svg className="w-5 h-5 text-amber-500" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <div className="w-10 h-10 border border-signal/30 bg-paper-raised flex items-center justify-center shrink-0">
+                  <svg className="w-5 h-5 text-signal" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                     <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.5} d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z" />
                   </svg>
                 </div>
                 <div>
-                  <p className="text-white font-medium mb-1">Business Hours</p>
-                  <p className="text-slate-400 text-sm">Monday – Friday: 9:00 AM – 6:00 PM</p>
-                  <p className="text-slate-500 text-xs mt-0.5">Closed on weekends & public holidays</p>
+                  <p className="text-ink font-display font-medium mb-1">Business Hours</p>
+                  <p className="text-ink-soft text-sm">Monday – Friday: 9:00 AM – 6:00 PM</p>
+                  <p className="text-ink-soft/60 text-xs mt-0.5">Closed on weekends & public holidays</p>
                 </div>
               </div>
             </div>
           </div>
 
           {/* Google Map */}
-          <div className="rounded-2xl overflow-hidden border border-slate-800 h-80">
+          <div className="overflow-hidden border border-steel h-80">
             <iframe
               title="Matrix Inter Trade Sdn Bhd location"
               src="https://www.google.com/maps?q=23-A,+Jalan+Bayu+Tinggi+7,+Taman+Bayu+Tinggi,+41200+Pelabuhan+Klang,+Selangor,+Malaysia&output=embed"

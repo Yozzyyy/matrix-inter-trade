@@ -1,4 +1,22 @@
-@import "tailwindcss"; 
+@import url('https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;600;700&family=Inter:wght@400;500;600;700&family=IBM+Plex+Mono:wght@500&display=swap');
+@import "tailwindcss";
+
+@theme {
+  --color-ink: #10161c;
+  --color-ink-soft: #3d4750;
+  --color-paper: #eceef0;
+  --color-paper-raised: #f6f7f5;
+  --color-navy: #0f3a5c;
+  --color-navy-dark: #0a2740;
+  --color-signal: #e2571c;
+  --color-signal-dark: #c14813;
+  --color-steel: #d6dad9;
+  --color-steel-dark: #aab1af;
+
+  --font-display: "Space Grotesk", sans-serif;
+  --font-body: "Inter", sans-serif;
+  --font-mono: "IBM Plex Mono", monospace;
+}
 
 *, *::before, *::after {
   box-sizing: border-box;
@@ -6,10 +24,25 @@
 
 body {
   margin: 0;
+  background-color: var(--color-paper);
+  color: var(--color-ink);
+  font-family: var(--font-body);
 }
 
 #root {
   min-height: 100svh;
   display: flex;
   flex-direction: column;
+}
+
+/* Manifest-label motif: dashed route rule used as a section divider */
+.route-rule {
+  background-image: repeating-linear-gradient(
+    to right,
+    var(--color-steel-dark) 0,
+    var(--color-steel-dark) 8px,
+    transparent 8px,
+    transparent 16px
+  );
+  height: 1px;
 }

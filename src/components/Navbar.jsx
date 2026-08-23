@@ -2,14 +2,14 @@ import { useState } from "react";
 
 const Logo = () => (
   <div className="flex items-center gap-3">
-    <div className="w-10 h-10 bg-amber-500 rounded flex items-center justify-center">
-      <svg viewBox="0 0 40 40" className="w-7 h-7 fill-slate-950">
+    <div className="w-10 h-10 bg-navy rounded-sm flex items-center justify-center">
+      <svg viewBox="0 0 40 40" className="w-7 h-7 fill-paper">
         <path d="M8 30 L8 14 L20 8 L32 14 L32 30 L26 30 L26 20 L14 20 L14 30 Z" />
       </svg>
     </div>
     <div>
-      <p className="text-white font-bold text-sm leading-tight tracking-wide">MATRIX INTER TRADE</p>
-      <p className="text-amber-500 text-xs tracking-widest uppercase">Sdn Bhd</p>
+      <p className="font-display text-ink font-bold text-sm leading-tight tracking-wide">MATRIX INTER TRADE</p>
+      <p className="font-mono text-signal text-[10px] tracking-widest uppercase">Sdn Bhd</p>
     </div>
   </div>
 );
@@ -24,7 +24,7 @@ export default function Navbar({ currentPage, navigate }) {
   ];
 
   return (
-    <header className="fixed top-0 w-full z-50 bg-slate-950/90 backdrop-blur-sm border-b border-slate-800">
+    <header className="fixed top-0 w-full z-50 bg-paper/90 backdrop-blur-sm border-b border-steel">
       <div className="max-w-7xl mx-auto px-6 py-4 flex items-center justify-between">
         <button onClick={() => navigate("home")}>
           <Logo />
@@ -36,10 +36,10 @@ export default function Navbar({ currentPage, navigate }) {
             <button
               key={link.id}
               onClick={() => navigate(link.id)}
-              className={`text-sm tracking-wider uppercase transition-colors duration-200 ${
+              className={`font-display text-sm tracking-wide uppercase transition-colors duration-200 ${
                 currentPage === link.id
-                  ? "text-amber-500"
-                  : "text-slate-400 hover:text-white"
+                  ? "text-signal"
+                  : "text-ink-soft hover:text-navy"
               }`}
             >
               {link.label}
@@ -47,7 +47,7 @@ export default function Navbar({ currentPage, navigate }) {
           ))}
           <button
             onClick={() => navigate("about")}
-            className="ml-2 px-5 py-2 bg-amber-500 text-slate-950 text-sm font-bold rounded tracking-wide hover:bg-amber-400 transition-colors"
+            className="ml-2 px-5 py-2 bg-navy text-paper text-sm font-display font-semibold rounded-sm tracking-wide hover:bg-navy-dark transition-colors"
           >
             Contact Us
           </button>
@@ -55,7 +55,7 @@ export default function Navbar({ currentPage, navigate }) {
 
         {/* Mobile Hamburger */}
         <button
-          className="md:hidden text-slate-300"
+          className="md:hidden text-ink"
           onClick={() => setMenuOpen(!menuOpen)}
         >
           <svg className="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
@@ -70,13 +70,13 @@ export default function Navbar({ currentPage, navigate }) {
 
       {/* Mobile Menu */}
       {menuOpen && (
-        <div className="md:hidden bg-slate-900 border-t border-slate-800 px-6 py-4 flex flex-col gap-4">
+        <div className="md:hidden bg-paper-raised border-t border-steel px-6 py-4 flex flex-col gap-4">
           {links.map((link) => (
             <button
               key={link.id}
               onClick={() => { navigate(link.id); setMenuOpen(false); }}
-              className={`text-left text-sm tracking-wider uppercase ${
-                currentPage === link.id ? "text-amber-500" : "text-slate-300"
+              className={`text-left font-display text-sm tracking-wide uppercase ${
+                currentPage === link.id ? "text-signal" : "text-ink-soft"
               }`}
             >
               {link.label}
