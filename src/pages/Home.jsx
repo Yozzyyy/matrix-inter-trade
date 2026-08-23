@@ -110,7 +110,7 @@ export default function Home({ navigate }) {
       <section className="max-w-7xl mx-auto px-6 py-24">
         <div className="text-center mb-16">
           <p className="font-mono text-signal text-xs tracking-widest uppercase mb-3">// Why Choose Us</p>
-          <h2 className="font-display text-4xl font-bold text-ink">Built for Businesses That Can't Afford Delays</h2>
+          <h2 className="font-display text-4xl font-bold text-white">Built for Businesses That Can't Afford Delays</h2>
         </div>
         <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
           {highlights.map((h) => (
