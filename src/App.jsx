@@ -18,7 +18,7 @@ export default function App() {
   };
 
   return (
-    <div className="min-h-screen text-white font-sans">
+    <div className="min-h-screen bg-paper text-ink font-body">
       <Navbar currentPage={currentPage} navigate={setCurrentPage} />
       <main>{renderPage()}</main>
       <Footer navigate={setCurrentPage} />
