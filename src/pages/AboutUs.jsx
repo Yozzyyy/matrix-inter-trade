@@ -84,8 +84,8 @@ export default function AboutUs() {
                   </svg>
                 </div>
                 <div>
-                  <p className="text-ink font-display font-medium mb-1">Address</p>
-                  <p className="text-ink-soft text-sm leading-relaxed">
+                  <p className="text-white font-display font-medium mb-1">Address</p>
+                  <p className="text-white text-sm leading-relaxed">
                     23-A, Jalan Bayu Tinggi 7,<br />
                     Taman Bayu Tinggi,<br />
                     41200 Pelabuhan Klang,<br />
@@ -101,7 +101,7 @@ export default function AboutUs() {
                   </svg>
                 </div>
                 <div>
-                  <p className="text-ink font-display font-medium mb-1">Hunting Lines</p>
+                  <p className="text-white font-display font-medium mb-1">Hunting Lines</p>
                   <a href="tel:+60333238581" className="text-signal hover:text-signal-dark text-sm">
                     +(6) 03 3323 8581
                   </a>

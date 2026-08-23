@@ -118,10 +118,10 @@ export default function Home({ navigate }) {
               <CornerTicks />
               <div className="flex items-start justify-between mb-5">
                 {h.icon}
-                <span className="font-mono text-[10px] text-ink-soft/50 tracking-widest">{h.ref}</span>
+                <span className="font-mono text-[10px] text-white/50 tracking-widest">{h.ref}</span>
               </div>
-              <h3 className="font-display text-ink font-semibold text-lg mb-3">{h.title}</h3>
-              <p className="text-ink-soft text-sm leading-relaxed">{h.desc}</p>
+              <h3 className="font-display text-white font-semibold text-lg mb-3">{h.title}</h3>
+              <p className="text-white text-sm leading-relaxed">{h.desc}</p>
             </div>
           ))}
         </div>
